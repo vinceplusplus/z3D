@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="XML">
+      <UniqueIdentifier>{6531dbb9-929f-4d41-8946-d34ac705d9ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\IO\BxSax.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IO\SaxBase.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IO\XmlSax.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IO\FileReader.cpp" />
+    <ClCompile Include="..\..\IO\FileSystem.cpp" />
+    <ClCompile Include="..\..\IO\MemReader.cpp" />
+    <ClCompile Include="..\..\IO\MemUpdater.cpp" />
+    <ClCompile Include="..\..\IO\MemWriter.cpp" />
+    <ClCompile Include="..\..\IO\Win32FileSys.cpp" />
+    <ClCompile Include="..\..\IO\ZipFileSys.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\IO\BxSax.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IO\SaxBase.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IO\XmlSax.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IO\FileReader.h" />
+    <ClInclude Include="..\..\IO\FileSystem.h" />
+    <ClInclude Include="..\..\IO\Header.h" />
+    <ClInclude Include="..\..\IO\MemReader.h" />
+    <ClInclude Include="..\..\IO\MemUpdater.h" />
+    <ClInclude Include="..\..\IO\MemWriter.h" />
+    <ClInclude Include="..\..\IO\predecl.h" />
+    <ClInclude Include="..\..\IO\Win32FileSys.h" />
+    <ClInclude Include="..\..\IO\ZipFileSys.h" />
+  </ItemGroup>
+</Project>

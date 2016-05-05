@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DF16DFB9-C8A3-464E-B911-B5158D1FDE79}</ProjectGuid>
+    <RootNamespace>z3DCore</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.23107.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin_dbg\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>true</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <BrowseInformation />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Core\AABB.cpp" />
+    <ClCompile Include="..\..\Core\AlignedHeapOp.cpp" />
+    <ClCompile Include="..\..\Core\AnimCtrl.cpp" />
+    <ClCompile Include="..\..\Core\AnimInst.cpp" />
+    <ClCompile Include="..\..\Core\AnimKey.cpp" />
+    <ClCompile Include="..\..\Core\AnyValue.cpp" />
+    <ClCompile Include="..\..\Core\biased_random.cpp" />
+    <ClCompile Include="..\..\Core\BitArray.cpp" />
+    <ClCompile Include="..\..\Core\ColorFunc.cpp" />
+    <ClCompile Include="..\..\Core\Config.cpp" />
+    <ClCompile Include="..\..\Core\CountDown.cpp" />
+    <ClCompile Include="..\..\Core\Counter.cpp" />
+    <ClCompile Include="..\..\Core\CtrlBase.cpp" />
+    <ClCompile Include="..\..\Core\CtrlSet.cpp" />
+    <ClCompile Include="..\..\Core\CtrlUpdater.cpp" />
+    <ClCompile Include="..\..\Core\Distance.cpp" />
+    <ClCompile Include="..\..\Core\duo_map.cpp" />
+    <ClCompile Include="..\..\Core\error_handle.cpp" />
+    <ClCompile Include="..\..\Core\fast_string.cpp" />
+    <ClCompile Include="..\..\Core\FNGen.cpp" />
+    <ClCompile Include="..\..\Core\FPSCounter.cpp" />
+    <ClCompile Include="..\..\Core\FPSCtrl.cpp" />
+    <ClCompile Include="..\..\Core\Frustum.cpp" />
+    <ClCompile Include="..\..\Core\gaussian.cpp" />
+    <ClCompile Include="..\..\Core\interlocked.cpp" />
+    <ClCompile Include="..\..\Core\lex.scn.cpp" />
+    <ClCompile Include="..\..\Core\LexScan.cpp" />
+    <ClCompile Include="..\..\Core\Line.cpp" />
+    <ClCompile Include="..\..\Core\LOD.cpp" />
+    <ClCompile Include="..\..\Core\LoggerSTL.cpp" />
+    <ClCompile Include="..\..\Core\MathFunc.cpp" />
+    <ClCompile Include="..\..\Core\Matrix2.cpp" />
+    <ClCompile Include="..\..\Core\Matrix3.cpp" />
+    <ClCompile Include="..\..\Core\Matrix4.cpp" />
+    <ClCompile Include="..\..\Core\Matrix4_decompose.cpp" />
+    <ClCompile Include="..\..\Core\Misc.cpp" />
+    <ClCompile Include="..\..\Core\Misc_crc.cpp" />
+    <ClCompile Include="..\..\Core\Misc_string.cpp" />
+    <ClCompile Include="..\..\Core\mt.cpp" />
+    <ClCompile Include="..\..\Core\mutex.cpp" />
+    <ClCompile Include="..\..\Core\mutex_fast.cpp" />
+    <ClCompile Include="..\..\Core\mutex_rw.cpp" />
+    <ClCompile Include="..\..\Core\mutex_rw2.cpp" />
+    <ClCompile Include="..\..\Core\OBB.cpp" />
+    <ClCompile Include="..\..\Core\Plane.cpp" />
+    <ClCompile Include="..\..\Core\Profiler.cpp" />
+    <ClCompile Include="..\..\Core\Quaternion.cpp" />
+    <ClCompile Include="..\..\Core\random.cpp" />
+    <ClCompile Include="..\..\Core\Ray.cpp" />
+    <ClCompile Include="..\..\Core\ResBase.cpp" />
+    <ClCompile Include="..\..\Core\ResMgr.cpp" />
+    <ClCompile Include="..\..\Core\RiffReader.cpp" />
+    <ClCompile Include="..\..\Core\shared_count.cpp" />
+    <ClCompile Include="..\..\Core\singleton.cpp" />
+    <ClCompile Include="..\..\Core\SMem.cpp" />
+    <ClCompile Include="..\..\Core\Sphere.cpp" />
+    <ClCompile Include="..\..\Core\sqlite.cpp" />
+    <ClCompile Include="..\..\Core\stack_any.cpp" />
+    <ClCompile Include="..\..\Core\Stats.cpp" />
+    <ClCompile Include="..\..\Core\sync_spin.cpp" />
+    <ClCompile Include="..\..\Core\TimeAnim.cpp" />
+    <ClCompile Include="..\..\Core\Timer.cpp" />
+    <ClCompile Include="..\..\Core\TimerService.cpp" />
+    <ClCompile Include="..\..\Core\Tokenizer.cpp" />
+    <ClCompile Include="..\..\Core\Triangle.cpp" />
+    <ClCompile Include="..\..\Core\TypeStuff.cpp" />
+    <ClCompile Include="..\..\Core\Vector2.cpp" />
+    <ClCompile Include="..\..\Core\Vector3.cpp" />
+    <ClCompile Include="..\..\Core\Vector4.cpp" />
+    <ClCompile Include="..\..\Core\version.cpp" />
+    <ClCompile Include="..\..\Core\W32MemDC.cpp" />
+    <ClCompile Include="..\..\Core\W32Thread.cpp" />
+    <ClCompile Include="..\..\Core\ZipUtil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Core\AABB.h" />
+    <ClInclude Include="..\..\Core\AlignedHeapOp.h" />
+    <ClInclude Include="..\..\Core\aligned_storage.h" />
+    <ClInclude Include="..\..\Core\aligned_storage_inl.h" />
+    <ClInclude Include="..\..\Core\allocators.h" />
+    <ClInclude Include="..\..\Core\allocators_inl.h" />
+    <ClInclude Include="..\..\Core\AnimCtrl.h" />
+    <ClInclude Include="..\..\Core\AnimInst.h" />
+    <ClInclude Include="..\..\Core\AnimKey.h" />
+    <ClInclude Include="..\..\Core\AnimKey_Inl.h" />
+    <ClInclude Include="..\..\Core\AnyValue.h" />
+    <ClInclude Include="..\..\Core\biased_random.h" />
+    <ClInclude Include="..\..\Core\BitArray.h" />
+    <ClInclude Include="..\..\Core\ColorFunc.h" />
+    <ClInclude Include="..\..\Core\compile_time_verifiers.h" />
+    <ClInclude Include="..\..\Core\Config.h" />
+    <ClInclude Include="..\..\Core\Constants.h" />
+    <ClInclude Include="..\..\Core\CoreDeinit.h" />
+    <ClInclude Include="..\..\Core\CountDown.h" />
+    <ClInclude Include="..\..\Core\Counter.h" />
+    <ClInclude Include="..\..\Core\CtrlBase.h" />
+    <ClInclude Include="..\..\Core\CtrlSet.h" />
+    <ClInclude Include="..\..\Core\CtrlUpdater.h" />
+    <ClInclude Include="..\..\Core\Distance.h" />
+    <ClInclude Include="..\..\Core\duo_map.h" />
+    <ClInclude Include="..\..\Core\fast_string.h" />
+    <ClInclude Include="..\..\Core\FlexLexer.h" />
+    <ClInclude Include="..\..\Core\FNGen.h" />
+    <ClInclude Include="..\..\Core\FPSCounter.h" />
+    <ClInclude Include="..\..\Core\FPSCtrl.h" />
+    <ClInclude Include="..\..\Core\Frustum.h" />
+    <ClInclude Include="..\..\Core\functor.h" />
+    <ClInclude Include="..\..\Core\functor_inl.h" />
+    <ClInclude Include="..\..\Core\functor_weak.h" />
+    <ClInclude Include="..\..\Core\functor_weak_inl.h" />
+    <ClInclude Include="..\..\Core\gaussian.h" />
+    <ClInclude Include="..\..\Core\gaussian_inl.h" />
+    <ClInclude Include="..\..\Core\Header.h" />
+    <ClInclude Include="..\..\Core\interlocked.h" />
+    <ClInclude Include="..\..\Core\LexScan.h" />
+    <ClInclude Include="..\..\Core\lfqueue.h" />
+    <ClInclude Include="..\..\Core\lfqueue_inl.h" />
+    <ClInclude Include="..\..\Core\Line.h" />
+    <ClInclude Include="..\..\Core\LOD.h" />
+    <ClInclude Include="..\..\Core\LoggerSTL.h" />
+    <ClInclude Include="..\..\Core\malloc_alignment.h" />
+    <ClInclude Include="..\..\Core\MathFunc.h" />
+    <ClInclude Include="..\..\Core\Matrix2.h" />
+    <ClInclude Include="..\..\Core\Matrix3.h" />
+    <ClInclude Include="..\..\Core\Matrix4.h" />
+    <ClInclude Include="..\..\Core\mem_alloc.h" />
+    <ClInclude Include="..\..\Core\mem_pool.h" />
+    <ClInclude Include="..\..\Core\mem_pool_inl.h" />
+    <ClInclude Include="..\..\Core\Misc.h" />
+    <ClInclude Include="..\..\Core\mt.h" />
+    <ClInclude Include="..\..\Core\mutex.h" />
+    <ClInclude Include="..\..\Core\mutex_fast.h" />
+    <ClInclude Include="..\..\Core\mutex_rw.h" />
+    <ClInclude Include="..\..\Core\mutex_rw2.h" />
+    <ClInclude Include="..\..\Core\noncopyable.h" />
+    <ClInclude Include="..\..\Core\nt_mem_pool.h" />
+    <ClInclude Include="..\..\Core\nt_mem_pool_inl.h" />
+    <ClInclude Include="..\..\Core\OBB.h" />
+    <ClInclude Include="..\..\Core\Plane.h" />
+    <ClInclude Include="..\..\Core\predecl.h" />
+    <ClInclude Include="..\..\Core\Profiler.h" />
+    <ClInclude Include="..\..\Core\QStats.h" />
+    <ClInclude Include="..\..\Core\QStats_Inl.h" />
+    <ClInclude Include="..\..\Core\Quaternion.h" />
+    <ClInclude Include="..\..\Core\random.h" />
+    <ClInclude Include="..\..\Core\Ray.h" />
+    <ClInclude Include="..\..\Core\ResBase.h" />
+    <ClInclude Include="..\..\Core\ResMgr.h" />
+    <ClInclude Include="..\..\Core\RiffReader.h" />
+    <ClInclude Include="..\..\Core\scn_header.h" />
+    <ClInclude Include="..\..\Core\scoped_lock.h" />
+    <ClInclude Include="..\..\Core\scoped_lock_read.h" />
+    <ClInclude Include="..\..\Core\scoped_lock_write.h" />
+    <ClInclude Include="..\..\Core\shared_count.h" />
+    <ClInclude Include="..\..\Core\singleton.h" />
+    <ClInclude Include="..\..\Core\SMem.h" />
+    <ClInclude Include="..\..\Core\Sphere.h" />
+    <ClInclude Include="..\..\Core\SPtr.h" />
+    <ClInclude Include="..\..\Core\SPtr_inl.h" />
+    <ClInclude Include="..\..\Core\sqlite.h" />
+    <ClInclude Include="..\..\Core\stack_any.h" />
+    <ClInclude Include="..\..\Core\Stats.h" />
+    <ClInclude Include="..\..\Core\stock.h" />
+    <ClInclude Include="..\..\Core\stock_inl.h" />
+    <ClInclude Include="..\..\Core\sync_spin.h" />
+    <ClInclude Include="..\..\Core\temp_stock.h" />
+    <ClInclude Include="..\..\Core\temp_stock_inl.h" />
+    <ClInclude Include="..\..\Core\thread_safe_stl.h" />
+    <ClInclude Include="..\..\Core\TimeAnim.h" />
+    <ClInclude Include="..\..\Core\Timer.h" />
+    <ClInclude Include="..\..\Core\TimerService.h" />
+    <ClInclude Include="..\..\Core\Tokenizer.h" />
+    <ClInclude Include="..\..\Core\Triangle.h" />
+    <ClInclude Include="..\..\Core\TypeStuff.h" />
+    <ClInclude Include="..\..\Core\UniqueMap.h" />
+    <ClInclude Include="..\..\Core\Vector2.h" />
+    <ClInclude Include="..\..\Core\Vector3.h" />
+    <ClInclude Include="..\..\Core\Vector4.h" />
+    <ClInclude Include="..\..\Core\version.h" />
+    <ClInclude Include="..\..\Core\W32MemDC.h" />
+    <ClInclude Include="..\..\Core\W32Thread.h" />
+    <ClInclude Include="..\..\Core\WPtr.h" />
+    <ClInclude Include="..\..\Core\WPtr_inl.h" />
+    <ClInclude Include="..\..\Core\ZipUtil.h" />
+    <ClInclude Include="..\..\Core\z_off_debug_new.h" />
+    <ClInclude Include="..\..\Core\z_on_debug_new.h" />
+    <ClInclude Include="..\..\dynamic_memory_allocator_config.h" />
+    <ClInclude Include="..\..\dynamic_memory_allocator_inl.h" />
+    <ClInclude Include="..\..\static_initializers.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

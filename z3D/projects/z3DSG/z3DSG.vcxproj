@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{88E03A63-18FD-4805-8050-6148D082B8C6}</ProjectGuid>
+    <RootNamespace>z3DSG</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.23107.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin_dbg\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>true</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\SG\BillboardCtrl.cpp" />
+    <ClCompile Include="..\..\SG\CameraCtrl.cpp" />
+    <ClCompile Include="..\..\SG\cgBeamFX.cpp" />
+    <ClCompile Include="..\..\SG\cgBillBoardFX.cpp" />
+    <ClCompile Include="..\..\SG\cgCloudFX.cpp" />
+    <ClCompile Include="..\..\SG\cgDecalFX.cpp" />
+    <ClCompile Include="..\..\SG\DataLoader.cpp" />
+    <ClCompile Include="..\..\SG\DrawHelper.cpp" />
+    <ClCompile Include="..\..\SG\Gizmos.cpp" />
+    <ClCompile Include="..\..\SG\LightCtrl.cpp" />
+    <ClCompile Include="..\..\SG\Mesh.cpp" />
+    <ClCompile Include="..\..\SG\MeshInst.cpp" />
+    <ClCompile Include="..\..\SG\MeshRenderer.cpp" />
+    <ClCompile Include="..\..\SG\Mesh_parse.cpp" />
+    <ClCompile Include="..\..\SG\MorpherCtrl.cpp" />
+    <ClCompile Include="..\..\SG\MtlCtrl.cpp" />
+    <ClCompile Include="..\..\SG\RenderInfo.cpp" />
+    <ClCompile Include="..\..\SG\SBoneNode.cpp" />
+    <ClCompile Include="..\..\SG\SCameraNode.cpp" />
+    <ClCompile Include="..\..\SG\SCtrlOps.cpp" />
+    <ClCompile Include="..\..\SG\SKDTNode.cpp" />
+    <ClCompile Include="..\..\SG\SkinCtrl.cpp" />
+    <ClCompile Include="..\..\SG\SLightNode.cpp" />
+    <ClCompile Include="..\..\SG\SMeshNode.cpp" />
+    <ClCompile Include="..\..\SG\SMgr.cpp" />
+    <ClCompile Include="..\..\SG\SMgr_render.cpp" />
+    <ClCompile Include="..\..\SG\SNode.cpp" />
+    <ClCompile Include="..\..\SG\SStructNode.cpp" />
+    <ClCompile Include="..\..\SG\SStructNode_parse.cpp" />
+    <ClCompile Include="..\..\SG\SVisitor.cpp" />
+    <ClCompile Include="..\..\SG\TMCtrl.cpp" />
+    <ClCompile Include="..\..\SG\VertexDeformCtrlBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\SG\BillboardCtrl.h" />
+    <ClInclude Include="..\..\SG\CameraCtrl.h" />
+    <ClInclude Include="..\..\SG\cgBeamFX.h" />
+    <ClInclude Include="..\..\SG\cgBillBoardFX.h" />
+    <ClInclude Include="..\..\SG\cgCloudFX.h" />
+    <ClInclude Include="..\..\SG\cgDecalFX.h" />
+    <ClInclude Include="..\..\SG\DataLoader.h" />
+    <ClInclude Include="..\..\SG\DrawHelper.h" />
+    <ClInclude Include="..\..\SG\Gizmos.h" />
+    <ClInclude Include="..\..\SG\Header.h" />
+    <ClInclude Include="..\..\SG\LightCtrl.h" />
+    <ClInclude Include="..\..\SG\Mesh.h" />
+    <ClInclude Include="..\..\SG\MeshInst.h" />
+    <ClInclude Include="..\..\SG\MeshRenderer.h" />
+    <ClInclude Include="..\..\SG\Mesh_structs.h" />
+    <ClInclude Include="..\..\SG\MorpherCtrl.h" />
+    <ClInclude Include="..\..\SG\MtlCtrl.h" />
+    <ClInclude Include="..\..\SG\predecl.h" />
+    <ClInclude Include="..\..\SG\RenderInfo.h" />
+    <ClInclude Include="..\..\SG\RenderParamQuery.h" />
+    <ClInclude Include="..\..\SG\SBoneNode.h" />
+    <ClInclude Include="..\..\SG\SCameraNode.h" />
+    <ClInclude Include="..\..\SG\SCtrlOps.h" />
+    <ClInclude Include="..\..\SG\SKDTNode.h" />
+    <ClInclude Include="..\..\SG\SkinCtrl.h" />
+    <ClInclude Include="..\..\SG\SLightNode.h" />
+    <ClInclude Include="..\..\SG\SMeshNode.h" />
+    <ClInclude Include="..\..\SG\SMgr.h" />
+    <ClInclude Include="..\..\SG\SNode.h" />
+    <ClInclude Include="..\..\SG\SStructNode.h" />
+    <ClInclude Include="..\..\SG\SVisitor.h" />
+    <ClInclude Include="..\..\SG\TMCtrl.h" />
+    <ClInclude Include="..\..\SG\VertexDeformCtrlBase.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

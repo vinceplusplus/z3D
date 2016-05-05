@@ -1,0 +1,20 @@
+
+set_polygon_mode "n"
+
+set_max_shadow_lights "n"
+
+set_glow_steps "n"
+
+set_fog_mode "n"
+
+set_fog_color "nnn"
+
+set_fog_start "n"
+
+set_fog_end "n"
+
+set_fog_density "n"
+
+set_clear_color "nnn"
+
+

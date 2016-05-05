@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Animation">
+      <UniqueIdentifier>{d3d31eef-0a14-4515-8e5f-b891ebdd90ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{34efdc54-f175-44fa-beb3-7a56687ef4e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CG">
+      <UniqueIdentifier>{ea84e47e-9664-4cb6-a144-c23344d35795}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\SG\BillboardCtrl.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\CameraCtrl.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\DataLoader.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\LightCtrl.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\MorpherCtrl.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\MtlCtrl.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\SCtrlOps.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\SkinCtrl.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\TMCtrl.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\VertexDeformCtrlBase.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\DrawHelper.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\Gizmos.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\Mesh.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\Mesh_parse.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\MeshInst.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\MeshRenderer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\RenderInfo.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\SBoneNode.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\SCameraNode.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\SKDTNode.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\SLightNode.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\SMeshNode.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\SMgr.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\SMgr_render.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\SNode.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\SStructNode.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\SStructNode_parse.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\SVisitor.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\cgBeamFX.cpp">
+      <Filter>CG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\cgBillBoardFX.cpp">
+      <Filter>CG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\cgCloudFX.cpp">
+      <Filter>CG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SG\cgDecalFX.cpp">
+      <Filter>CG</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\SG\BillboardCtrl.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\CameraCtrl.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\DataLoader.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\LightCtrl.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\MorpherCtrl.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\MtlCtrl.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\SCtrlOps.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\SkinCtrl.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\TMCtrl.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\VertexDeformCtrlBase.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\DrawHelper.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\Gizmos.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\Mesh.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\Mesh_structs.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\MeshInst.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\MeshRenderer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\RenderInfo.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\RenderParamQuery.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\SBoneNode.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\SCameraNode.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\SKDTNode.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\SLightNode.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\SMeshNode.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\SMgr.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\SNode.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\SStructNode.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\SVisitor.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\cgBeamFX.h">
+      <Filter>CG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\cgBillBoardFX.h">
+      <Filter>CG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\cgCloudFX.h">
+      <Filter>CG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\cgDecalFX.h">
+      <Filter>CG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SG\Header.h" />
+    <ClInclude Include="..\..\SG\predecl.h" />
+  </ItemGroup>
+</Project>

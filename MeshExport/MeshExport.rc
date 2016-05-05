@@ -1,0 +1,433 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_EX_MATERIAL_PANEL DIALOGEX 0, 0, 108, 413
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,54,395,50,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Active Mtl",IDC_BTN_GET_ACTIVE_MATERIAL,5,4,40,15
+    CTEXT           "",IDC_LBL_MATERIAL_NAME,5,24,97,15,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    GROUPBOX        "Properties",IDC_GROUP_PROPERTIES,5,44,97,329
+    LTEXT           "Blend Override: ",IDC_LBL_BLEND_OVERRIDE,11,55,53,8
+    COMBOBOX        IDC_COMBO_BLEND_OVERRIDE,10,66,87,30,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Alpha Test Override: ",IDC_LBL_ALPHA_TEST_OVERRIDE,11,83,70,8
+    COMBOBOX        IDC_COMBO_ALPHA_TEST_OVERRIDE,10,94,87,30,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Alpha Test Ref: ",IDC_LBL_ALPHA_TEST_REF,11,113,53,8
+    CONTROL         "",IDC_SLOT_ALPHA_TEST_REF,"CustEdit",WS_TABSTOP,63,112,25,10
+    CONTROL         "",IDC_SLOTSPIN_ALPHA_TEST_REF,"SpinnerControl",0x0,89,112,7,10
+    LTEXT           "Layer Index: ",IDC_LBL_LAYER_INDEX,20,129,44,8
+    CONTROL         "",IDC_SLOT_LAYER_INDEX,"CustEdit",WS_TABSTOP,63,128,25,10
+    CONTROL         "",IDC_SLOTSPIN_LAYER_INDEX,"SpinnerControl",0x0,89,128,7,10
+    PUSHBUTTON      "Reset",IDC_BTN_RESET_MATERIAL_PROPERTIES,10,355,87,14
+    LTEXT           "Blend Mode Override:",IDC_LBL_BLEND_MODE_OVERRIDE,11,144,70,8
+    COMBOBOX        IDC_COMBO_BLEND_MODE_OVERRIDE,10,155,87,30,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Diffuse Filter Override: \n(min - mag - mip)",IDC_LBL_DIFFUSE_FILTER_OVERRIDE,11,173,78,21
+    COMBOBOX        IDC_COMBO_DIFFUSE_FILTER_OVERRIDE,10,193,87,30,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Src Blend Factor: ",IDC_LBL_SRC_BLEND_FACTOR,15,221,58,8
+    GROUPBOX        "Explicit Blend Mode",IDC_GROUP_EXPLICIT_BLEND_MODE,10,210,87,99
+    COMBOBOX        IDC_COMBO_SRC_BLEND_FACTOR,15,232,77,30,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Dst Blend Factor: ",IDC_LBL_DST_BLEND_FACTOR,15,249,58,8
+    COMBOBOX        IDC_COMBO_DST_BLEND_FACTOR,15,260,77,30,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Blend Op: ",IDC_LBL_BLEND_OP,16,277,34,8
+    COMBOBOX        IDC_COMBO_BLEND_OP,15,288,77,30,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Selected Node",IDC_BTN_GET_SELECTED_NODE,47,4,55,15
+    PUSHBUTTON      "Make Sprite UV Anim",IDC_BTN_MAKE_SPRITE_UV_ANIM,10,377,87,14
+    CONTROL         "Sep Opacity Mapping",IDC_CHECK_SEP_OPACITY_MAPPING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,312,83,10
+END
+
+IDD_BITMAP_RELOCATOR_PANEL DIALOGEX 0, 0, 108, 31
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Relocate Bitmaps",IDC_BTN_RELOCATE_BITMAPS,4,8,100,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_EX_MATERIAL_PANEL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 396
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 387, 303
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Static",IDC_STATIC,7,3,159,57,WS_DISABLED
+    CONTROL         "Meshes",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP,24,18,131,10
+    CONTROL         "Skinned Mesh",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,24,33,133,10
+    CONTROL         "1 Mesh Only",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,24,47,128,10
+    DEFPUSHBUTTON   "OK",IDC_OK,29,282,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",IDC_CANCEL,97,282,50,14
+    CONTROL         "Object Space",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,12,64,71,10
+    LTEXT           "Mesh Directory: ",IDC_STATIC,13,156,80,8
+    LTEXT           "Texture Directory:",IDC_STATIC,13,172,85,8
+    EDITTEXT        IDC_EDIT1,105,154,140,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,105,169,140,14,ES_AUTOHSCROLL
+    LTEXT           "DO NOT put a slash/back slash before and after",IDC_STATIC,251,154,102,31
+    LTEXT           "Animation Data Directory: ",IDC_STATIC,13,187,86,8
+    EDITTEXT        IDC_EDIT3,105,185,140,14,ES_AUTOHSCROLL
+    CONTROL         "export pos && rot",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,12,79,69,10
+    PUSHBUTTON      "Export Skeleton",IDC_BUTTON1,240,10,108,14,WS_DISABLED
+    CONTROL         "text version",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,7,93,55,10
+    PUSHBUTTON      "&Export Scene",IDC_BUTTON3,239,26,108,14
+    CONTROL         "Default Toon?",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,202,82,10
+    LTEXT           "Toon map: ",IDC_STATIC,17,218,45,8
+    EDITTEXT        IDC_EDIT4,68,215,133,14,ES_AUTOHSCROLL
+    LTEXT           "Toon outline width: ",IDC_STATIC,17,234,67,8
+    EDITTEXT        IDC_EDIT5,85,231,57,14,ES_AUTOHSCROLL
+    LTEXT           "Toon outline color",IDC_STATIC,17,249,58,8
+    LTEXT           "Red",IDC_STATIC,85,249,14,8
+    EDITTEXT        IDC_EDIT6,106,246,40,14,ES_AUTOHSCROLL
+    LTEXT           "Green",IDC_STATIC,154,249,20,8
+    EDITTEXT        IDC_EDIT7,178,246,40,14,ES_AUTOHSCROLL
+    LTEXT           "Blue",IDC_STATIC,231,249,14,8
+    EDITTEXT        IDC_EDIT8,252,246,40,14,ES_AUTOHSCROLL
+    LTEXT           "(floating point)",IDC_STATIC,151,234,48,8
+    LTEXT           "(floating point, 0-1.0)",IDC_STATIC,293,244,70,23
+    CONTROL         "export bone as mesh",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,7,106,56,10
+    PUSHBUTTON      "Export Path",IDC_BUTTON4,239,42,108,14
+    CONTROL         "export ambient && diffuse color as white when using diffuse map",IDC_CHECK6,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,90,60,141,26
+    CONTROL         "force lightmap filter linear",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,90,105,111,13
+    LTEXT           "Default Export Folder: ",IDC_STATIC,17,265,74,8
+    EDITTEXT        IDC_EDIT9,94,264,140,14,ES_AUTOHSCROLL
+    CONTROL         "sample all frames in animation range",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,239,60,141,21
+    LTEXT           "Generated Tex Size: ",IDC_STATIC,178,202,85,8
+    EDITTEXT        IDC_EDIT10,270,198,40,14,ES_AUTOHSCROLL
+    CONTROL         "export specular color as white when using specular map",IDC_CHECK9,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,90,82,141,24
+    CONTROL         "convert .psd to .tga (only change fmt)",IDC_CHECK10,
+                    "Button",BS_AUTOCHECKBOX | BS_VCENTER | BS_MULTILINE | WS_TABSTOP,239,91,141,15
+    LTEXT           "Max Tex Size: ",IDC_STATIC,271,126,51,8
+    EDITTEXT        IDC_EDIT11,325,123,40,14,ES_AUTOHSCROLL
+    CONTROL         "make tex size power of 2",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | BS_VCENTER | BS_MULTILINE | WS_TABSTOP,239,105,141,11
+    CONTROL         "export current view as Camera01",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,122,123,10
+    CONTROL         "add lights to the helper Camera01",IDC_CHECK13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,141,122,125,10
+    CONTROL         "skip textures",IDC_CHECK14,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,135,57,10
+    PUSHBUTTON      "¡K",IDC_BUTTON5,237,264,14,14
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 266, 169
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose the Skeleton Root Node"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,209,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,209,24,50,14
+    LISTBOX         IDC_LIST1,7,7,200,155,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 233, 223
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Make Sprite UV Anim"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This utility will insert uv offset step keys to both the diffuse map and the opacity map",IDC_STATIC,13,10,199,21
+    LTEXT           "No.of Rows: ",IDC_STATIC,22,40,43,8
+    LTEXT           "No. of Cols: ",IDC_STATIC,22,56,41,8
+    LTEXT           "Start Frame Slot: ",IDC_STATIC,22,71,58,8
+    LTEXT           "No. of Frames: ",IDC_STATIC,22,86,51,8
+    LTEXT           "Key Frame Spacing: ",IDC_STATIC,22,101,66,8
+    LTEXT           "Append Keys @ Frame #: ",IDC_STATIC,22,116,86,8
+    LTEXT           "Padding: ",IDC_LBL_PADDING,33,161,31,8
+    LTEXT           "(WARNING: This operation will flush out the undo buffer)",IDC_STATIC,22,186,183,8
+    EDITTEXT        IDC_EDIT1,110,38,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,110,54,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,110,69,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,110,84,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,110,99,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,110,114,40,12,ES_AUTOHSCROLL
+    CONTROL         "Object UVs !!! NOT !!! already framing the left-top slice",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,22,132,204,15
+    EDITTEXT        IDC_EDIT7,121,158,40,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,119,202,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,176,202,50,14
+    PUSHBUTTON      "0",IDC_BUTTON1,160,66,9,9,BS_CENTER | BS_VCENTER | WS_DISABLED
+    PUSHBUTTON      "1",IDC_BUTTON2,170,66,9,9,BS_CENTER | BS_VCENTER | WS_DISABLED
+    PUSHBUTTON      "2",IDC_BUTTON3,180,66,9,9,BS_CENTER | BS_VCENTER | WS_DISABLED
+    PUSHBUTTON      "3",IDC_BUTTON4,160,75,9,9,BS_CENTER | BS_VCENTER | WS_DISABLED
+    PUSHBUTTON      "4",IDC_BUTTON5,170,75,9,9,BS_CENTER | BS_VCENTER | WS_DISABLED
+    PUSHBUTTON      "¡K",IDC_BUTTON6,180,75,9,9,BS_CENTER | BS_VCENTER | WS_DISABLED
+    GROUPBOX        "Options",IDC_GROUP_FRAME_WHOLE,22,149,163,27
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 380
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 296
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PANEL DIALOG  0, 0, 216, 80
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           " Color :",IDC_STATIC,22,26,26,10
+    CONTROL         "User1",IDC_COLOR,"ColorSwatch",0x0,51,18,50,26
+    CONTROL         "M",IDC_MAPON_CLR,"CustButton",0x0,106,27,10,10
+    CONTROL         "",IDC_HIGHLIGHT,"Static",SS_BLACKFRAME,135,25,67,47
+    LTEXT           " Opacity :",IDC_STATIC,19,60,31,8
+    CONTROL         "",IDC_TR_EDIT,"CustEdit",WS_TABSTOP,52,60,22,10
+    CONTROL         "0,255,0",IDC_TR_SPIN,"SpinnerControl",WS_TABSTOP,74,60,11,10
+    CONTROL         "M",IDC_MAPON_TR,"CustButton",0x0,91,60,10,10
+    RTEXT           "Brightness :",IDC_STATIC,12,48,37,8
+    CONTROL         "",IDC_BR_EDIT,"CustEdit",WS_TABSTOP,52,48,22,10
+    CONTROL         "0,255,0",IDC_BR_SPIN,"SpinnerControl",WS_TABSTOP,74,48,11,10
+    CONTROL         "M",IDC_MAPON_BR,"CustButton",0x0,91,48,10,10
+    GROUPBOX        "Shading Settings",IDC_STATIC,4,4,119,72
+    CTEXT           "Specular Curve",IDC_STATIC,135,11,67,12,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_PANEL_OBJ DIALOG  0, 0, 108, 156
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Generated by Plugin AppWizard\nCode && design by\nRavi Karra - Discreet\nSpace Warp",IDC_STATIC,7,7,94,36
+    CONTROL         "",IDC_EDIT_OBJ,"CustEdit",WS_TABSTOP,29,114,35,10
+    CONTROL         "",IDC_SPIN_OBJ,"SpinnerControl",0x0,65,114,7,10
+    LTEXT           "Spinner Cust Control:",IDC_STATIC,20,102,67,8
+    CTEXT           "TODO: Place panel controls here.",IDC_STATIC,15,63,78,19
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PANEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 101
+        TOPMARGIN, 7
+    END
+
+    IDD_PANEL_OBJ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 101
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,40
+ PRODUCTVERSION 1,0,0,40
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "FileDescription", "MeshExpo Dynamic Link Library"
+            VALUE "FileVersion", "1, 0, 0, 40"
+            VALUE "InternalName", "MeshExpo"
+            VALUE "LegalCopyright", "Copyright (C) 2008"
+            VALUE "OriginalFilename", "MeshExpo.dll"
+            VALUE "ProductName", "MeshExpo Dynamic Link Library"
+            VALUE "ProductVersion", "1, 0, 0, 40"
+            VALUE "CompileDateTime", "2009.01.27  18:53:07"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LIBDESCRIPTION      "Mesh Export"
+    IDS_CATEGORY            "Export"
+    IDS_CLASS_NAME          "MeshExport"
+    IDS_PARAMS              "Parameters"
+    IDS_SPIN                "Spin"
+    IDS_COMMENT             "Appwizard generated Plugin"
+    IDS_COORDS              "Coordinates"
+    IDS_PARAM2              "Param2"
+    IDS_MN_OPACITY          "Opacity"
+    IDS_MN_NONE             "None"
+    IDS_COLOR               "Diffuse Color"
+    IDS_PARAMCHG            "Parameter Change"
+    IDS_MN_DIFFUSE_I        "Diffuse"
+    IDS_MN_BRIGHTNESS_I     "Brightness"
+    IDS_MN_OPACITY_I        "Opacity"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

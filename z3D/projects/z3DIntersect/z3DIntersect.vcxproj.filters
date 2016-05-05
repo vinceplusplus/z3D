@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="TriTrees">
+      <UniqueIdentifier>{5f242800-9c9b-41a9-8b16-180993777853}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Intersect\btTriTree.cpp">
+      <Filter>TriTrees</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Intersect\ocTriTree.cpp">
+      <Filter>TriTrees</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Intersect\CD.cpp" />
+    <ClCompile Include="..\..\Intersect\Closest.cpp" />
+    <ClCompile Include="..\..\Intersect\Intr.cpp" />
+    <ClCompile Include="..\..\Intersect\SAT.cpp" />
+    <ClCompile Include="..\..\Intersect\Test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Intersect\btTriTree.h">
+      <Filter>TriTrees</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Intersect\ocTriTree.h">
+      <Filter>TriTrees</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Intersect\CD.h" />
+    <ClInclude Include="..\..\Intersect\Closest.h" />
+    <ClInclude Include="..\..\Intersect\Header.h" />
+    <ClInclude Include="..\..\Intersect\Intr.h" />
+    <ClInclude Include="..\..\Intersect\predecl.h" />
+    <ClInclude Include="..\..\Intersect\SAT.h" />
+    <ClInclude Include="..\..\Intersect\Test.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Intersect\jgt-tribox.inl" />
+  </ItemGroup>
+</Project>

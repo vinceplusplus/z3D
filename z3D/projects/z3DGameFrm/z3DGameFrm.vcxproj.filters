@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="UI">
+      <UniqueIdentifier>{ffc34e49-ecf4-478d-8925-734c47df1b0e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\GameFrm\uiBase.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameFrm\uiButton.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameFrm\uiHeader.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameFrm\uiListView.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameFrm\uiMgr.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameFrm\uiMover.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameFrm\uiScrollbar.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameFrm\uiSlider.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameFrm\uiTextField.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameFrm\GameApp.cpp" />
+    <ClCompile Include="..\..\GameFrm\GameView.cpp" />
+    <ClCompile Include="..\..\GameFrm\GameWnd.cpp" />
+    <ClCompile Include="..\..\GameFrm\Input.cpp" />
+    <ClCompile Include="..\..\GameFrm\W32Wnd.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\GameFrm\uiBase.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameFrm\uiButton.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameFrm\uiMgr.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameFrm\uiTextField.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameFrm\GameApp.h" />
+    <ClInclude Include="..\..\GameFrm\GameView.h" />
+    <ClInclude Include="..\..\GameFrm\GameWnd.h" />
+    <ClInclude Include="..\..\GameFrm\Header.h" />
+    <ClInclude Include="..\..\GameFrm\Input.h" />
+    <ClInclude Include="..\..\GameFrm\predecl.h" />
+    <ClInclude Include="..\..\GameFrm\W32Wnd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\GameFrm\uiHeader.h">
+      <Filter>UI</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\GameFrm\uiListView.h">
+      <Filter>UI</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\GameFrm\uiMover.h">
+      <Filter>UI</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\GameFrm\uiScrollbar.h">
+      <Filter>UI</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\GameFrm\uiSlider.h">
+      <Filter>UI</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,33 @@
+
+
+create_node "s"
+create_mesh_node "ss"
+
+create_ambient_light_node "sffffd"
+create_dir_light_node "sffffffdd"
+create_point_light_node "sfffffdd"
+create_spot_light_node "sfffffffdd"
+
+create_camera_node "sffff"
+set_camera_ortho "s"
+create_bone_node "sffffff"
+
+set_node_pos "sfff"
+set_node_rot "sffff"
+set_node_scale "sfff"
+
+set_node_parent "ss"
+
+set_node_shadow_mode "sdd"
+
+
+set_camera_node_yfov_animdata "ss"
+set_camera_node_znear_animdata "ss"
+set_camera_node_zfar_animdata "ss"
+
+set_light_node_color_animdata "ss"
+set_light_node_multiplier_animdata "ss"
+set_light_node_radius_animdata "ss"
+set_light_node_inner_angle_animdata "ss"
+set_light_node_outer_angle_animdata "ss"
+

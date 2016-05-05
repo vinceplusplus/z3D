@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{825b4f5e-96aa-4f20-99d7-12cde26718fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Animation">
+      <UniqueIdentifier>{56ab8b92-4b84-4d58-a9ac-2752af34b6d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Math">
+      <UniqueIdentifier>{4c00817b-d206-4b11-86a8-17fc7f7c4be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Misc">
+      <UniqueIdentifier>{57190503-ecdf-4b4c-a3b2-7bed4311885f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Object System">
+      <UniqueIdentifier>{9e29505d-f4df-486a-a69c-1d555e8c0262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Threading">
+      <UniqueIdentifier>{3818ea4d-d3c0-497f-b734-41607ed4fac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Util">
+      <UniqueIdentifier>{d5a3166a-174b-45c6-b7d1-4e54b2ded95f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Util\Lock-Free">
+      <UniqueIdentifier>{1793aca8-6cd5-49dd-a098-56bee6acc821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{c19573db-97b5-4793-ae13-88d0438a2491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO\XML">
+      <UniqueIdentifier>{faf59f5f-e66b-4656-96c3-f44905a45669}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Core\CoreDeinit.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dynamic_memory_allocator_config.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dynamic_memory_allocator_inl.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Header.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\malloc_alignment.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\predecl.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\static_initializers.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\z_off_debug_new.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\z_on_debug_new.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\AnimCtrl.h">
+      <Filter>Core\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\AnimInst.h">
+      <Filter>Core\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\AnimKey.h">
+      <Filter>Core\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\AnimKey_Inl.h">
+      <Filter>Core\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\CtrlBase.h">
+      <Filter>Core\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\CtrlSet.h">
+      <Filter>Core\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\CtrlUpdater.h">
+      <Filter>Core\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\LOD.h">
+      <Filter>Core\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\TimeAnim.h">
+      <Filter>Core\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Timer.h">
+      <Filter>Core\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\TimerService.h">
+      <Filter>Core\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\AABB.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\ColorFunc.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Constants.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Distance.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Frustum.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Line.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\MathFunc.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Matrix2.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Matrix3.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Matrix4.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\OBB.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Plane.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Quaternion.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Ray.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Sphere.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Triangle.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Vector2.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Vector3.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Vector4.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Misc.h">
+      <Filter>Core\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\sqlite.h">
+      <Filter>Core\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\W32MemDC.h">
+      <Filter>Core\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\noncopyable.h">
+      <Filter>Core\Object System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\ResBase.h">
+      <Filter>Core\Object System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\ResMgr.h">
+      <Filter>Core\Object System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\shared_count.h">
+      <Filter>Core\Object System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\singleton.h">
+      <Filter>Core\Object System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\TypeStuff.h">
+      <Filter>Core\Object System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\interlocked.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\mutex.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\mutex_fast.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\mutex_rw.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\mutex_rw2.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\scoped_lock.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\scoped_lock_read.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\scoped_lock_write.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\sync_spin.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\thread_safe_stl.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\W32Thread.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\AlignedHeapOp.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\AlignedStorage.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\allocators.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\AnyValue.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\biased_random.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\BitArray.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Config.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\CountDown.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Counter.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\duo_map.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\fast_string.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\FlexLexer.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\FNGen.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\FPSCounter.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\FPSCtrl.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\functor.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\functor_weak.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\LexScan.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\LoggerSTL.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\mem_alloc.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\mt.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Profiler.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\QStats.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\QStats_Inl.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\random.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\RiffReader.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\scn_header.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\SMem.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\stack_any.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Stats.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\stock.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\temp_stock.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Tokenizer.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\UniqueMap.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\version.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\ZipUtil.h">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\lfqueue.h">
+      <Filter>Core\Util\Lock-Free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\lfqueue_inl.h">
+      <Filter>Core\Util\Lock-Free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\mem_pool.h">
+      <Filter>Core\Util\Lock-Free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\mem_pool_inl.h">
+      <Filter>Core\Util\Lock-Free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\nt_mem_pool.h">
+      <Filter>Core\Util\Lock-Free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\nt_mem_pool_inl.h">
+      <Filter>Core\Util\Lock-Free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IO\FileReader.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IO\FileSystem.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IO\Header.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IO\MemReader.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IO\MemUpdater.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IO\MemWriter.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IO\predecl.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IO\Win32FileSys.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IO\ZipFileSys.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IO\BxSax.h">
+      <Filter>IO\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IO\SaxBase.h">
+      <Filter>IO\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IO\XmlSax.h">
+      <Filter>IO\XML</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Core\error_handle.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\AnimCtrl.cpp">
+      <Filter>Core\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\AnimInst.cpp">
+      <Filter>Core\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\CtrlBase.cpp">
+      <Filter>Core\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\CtrlSet.cpp">
+      <Filter>Core\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\CtrlUpdater.cpp">
+      <Filter>Core\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\LOD.cpp">
+      <Filter>Core\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\TimeAnim.cpp">
+      <Filter>Core\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Timer.cpp">
+      <Filter>Core\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\TimerService.cpp">
+      <Filter>Core\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\AABB.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\ColorFunc.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Distance.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Frustum.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Line.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\MathFunc.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Matrix2.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Matrix3.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Matrix4.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Matrix4_decompose.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\OBB.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Plane.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Quaternion.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Ray.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Sphere.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Triangle.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Vector2.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Vector3.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Vector4.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Misc.cpp">
+      <Filter>Core\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Misc_crc.cpp">
+      <Filter>Core\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Misc_string.cpp">
+      <Filter>Core\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\sqlite.cpp">
+      <Filter>Core\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\W32MemDC.cpp">
+      <Filter>Core\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\ResBase.cpp">
+      <Filter>Core\Object System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\ResMgr.cpp">
+      <Filter>Core\Object System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\shared_count.cpp">
+      <Filter>Core\Object System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\singleton.cpp">
+      <Filter>Core\Object System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\TypeStuff.cpp">
+      <Filter>Core\Object System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\interlocked.cpp">
+      <Filter>Core\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\mutex.cpp">
+      <Filter>Core\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\mutex_fast.cpp">
+      <Filter>Core\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\mutex_rw.cpp">
+      <Filter>Core\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\mutex_rw2.cpp">
+      <Filter>Core\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\sync_spin.cpp">
+      <Filter>Core\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\W32Thread.cpp">
+      <Filter>Core\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\AlignedHeapOp.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\AnyValue.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\biased_random.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\BitArray.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Config.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\CountDown.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Counter.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\duo_map.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\fast_string.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\FNGen.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\FPSCounter.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\FPSCtrl.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\lex.scn.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\LexScan.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\LoggerSTL.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\mt.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Profiler.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\random.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\RiffReader.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\SMem.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\stack_any.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Stats.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\Tokenizer.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\version.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Core\ZipUtil.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IO\FileReader.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IO\FileSystem.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IO\MemReader.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IO\MemUpdater.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IO\MemWriter.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IO\Win32FileSys.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IO\ZipFileSys.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IO\BxSax.cpp">
+      <Filter>IO\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IO\SaxBase.cpp">
+      <Filter>IO\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IO\XmlSax.cpp">
+      <Filter>IO\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="z3DStaticInit.cpp" />
+  </ItemGroup>
+</Project>

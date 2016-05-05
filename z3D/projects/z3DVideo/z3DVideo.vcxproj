@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2D4F7010-A31B-459F-B443-52799CEDC60A}</ProjectGuid>
+    <RootNamespace>z3DVideo</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.23107.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin_dbg\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)freetype/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>true</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)freetype/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Video\AVIReader.cpp" />
+    <ClCompile Include="..\..\Video\AVIRenderer.cpp" />
+    <ClCompile Include="..\..\Video\d3dGfx.cpp" />
+    <ClCompile Include="..\..\Video\d3dIBO.cpp" />
+    <ClCompile Include="..\..\Video\d3dRenderbuffer.cpp" />
+    <ClCompile Include="..\..\Video\d3dShader.cpp" />
+    <ClCompile Include="..\..\Video\d3dShaderGen.cpp" />
+    <ClCompile Include="..\..\Video\d3dShaderGen_init.cpp" />
+    <ClCompile Include="..\..\Video\d3dTex2D.cpp" />
+    <ClCompile Include="..\..\Video\d3dTexCube.cpp" />
+    <ClCompile Include="..\..\Video\d3dVBO.cpp" />
+    <ClCompile Include="..\..\Video\Gfx.cpp" />
+    <ClCompile Include="..\..\Video\IBO.cpp" />
+    <ClCompile Include="..\..\Video\Img2D.cpp" />
+    <ClCompile Include="..\..\Video\Jotter.cpp" />
+    <ClCompile Include="..\..\Video\Renderbuffer.cpp" />
+    <ClCompile Include="..\..\Video\rsShade.cpp" />
+    <ClCompile Include="..\..\Video\rsView.cpp" />
+    <ClCompile Include="..\..\Video\Shader.cpp" />
+    <ClCompile Include="..\..\Video\ShaderGenConf.cpp" />
+    <ClCompile Include="..\..\Video\ShaderUniforms.cpp" />
+    <ClCompile Include="..\..\Video\ShaderUniforms2.cpp" />
+    <ClCompile Include="..\..\Video\Tex2D.cpp" />
+    <ClCompile Include="..\..\Video\Tex2DAVI.cpp" />
+    <ClCompile Include="..\..\Video\Tex2DGIF.cpp" />
+    <ClCompile Include="..\..\Video\TexBase.cpp" />
+    <ClCompile Include="..\..\Video\TexCube.cpp" />
+    <ClCompile Include="..\..\Video\TexCube_load.cpp" />
+    <ClCompile Include="..\..\Video\TexFont.cpp" />
+    <ClCompile Include="..\..\Video\TexFont_Internal.cpp" />
+    <ClCompile Include="..\..\Video\VBO.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Video\AVIReader.h" />
+    <ClInclude Include="..\..\Video\AVIRenderer.h" />
+    <ClInclude Include="..\..\Video\d3dGfx.h" />
+    <ClInclude Include="..\..\Video\d3dIBO.h" />
+    <ClInclude Include="..\..\Video\d3dRenderbuffer.h" />
+    <ClInclude Include="..\..\Video\d3dShader.h" />
+    <ClInclude Include="..\..\Video\d3dShaderGen.h" />
+    <ClInclude Include="..\..\Video\d3dTex2D.h" />
+    <ClInclude Include="..\..\Video\d3dTexCube.h" />
+    <ClInclude Include="..\..\Video\d3dVBO.h" />
+    <ClInclude Include="..\..\Video\Gfx.h" />
+    <ClInclude Include="..\..\Video\GfxEnum.h" />
+    <ClInclude Include="..\..\Video\Header.h" />
+    <ClInclude Include="..\..\Video\IBO.h" />
+    <ClInclude Include="..\..\Video\Img2D.h" />
+    <ClInclude Include="..\..\Video\Jotter.h" />
+    <ClInclude Include="..\..\Video\predecl.h" />
+    <ClInclude Include="..\..\Video\Renderbuffer.h" />
+    <ClInclude Include="..\..\Video\rsShade.h" />
+    <ClInclude Include="..\..\Video\rsView.h" />
+    <ClInclude Include="..\..\Video\Shader.h" />
+    <ClInclude Include="..\..\Video\ShaderGen.h" />
+    <ClInclude Include="..\..\Video\ShaderGenConf.h" />
+    <ClInclude Include="..\..\Video\ShaderUniforms.h" />
+    <ClInclude Include="..\..\Video\ShaderUniforms2.h" />
+    <ClInclude Include="..\..\Video\Tex2D.h" />
+    <ClInclude Include="..\..\Video\Tex2DAVI.h" />
+    <ClInclude Include="..\..\Video\Tex2DGIF.h" />
+    <ClInclude Include="..\..\Video\TexBase.h" />
+    <ClInclude Include="..\..\Video\TexCube.h" />
+    <ClInclude Include="..\..\Video\TexFont.h" />
+    <ClInclude Include="..\..\Video\TexFont_Internal.h" />
+    <ClInclude Include="..\..\Video\VBO.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

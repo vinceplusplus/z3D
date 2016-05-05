@@ -1,0 +1,14 @@
+set_speed "f"
+
+create_tm_controller "ss"
+
+resize_pos_keys "d"
+resize_rot_keys "d"
+resize_scale_keys "d"
+
+set_pos_key "dnfff"
+set_rot_key "dnffff"
+set_scale_key "dnfff"
+
+
+

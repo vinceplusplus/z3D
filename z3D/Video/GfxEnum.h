@@ -1,0 +1,225 @@
+
+#pragma once
+
+#include "predecl.h"
+
+namespace z3D
+{
+	namespace Video
+	{
+		class GfxEnum
+		{
+		public:
+			typedef enum _SHADEMODE: uint8_t
+			{
+				SHADEMODE_FLAT = 0,
+				SHADEMODE_GOURAUD,
+			} SHADEMODE;
+
+			typedef enum _POLYGONMODE: uint8_t
+			{
+				POLYGONMODE_POINT = 0,
+				POLYGONMODE_LINE,
+				POLYGONMODE_FILL,
+			} POLYGONMODE;
+
+			typedef enum _FOGMODE: uint8_t
+			{
+				FOGMODE_LINEAR = 0,
+				FOGMODE_EXP,
+				FOGMODE_EXP2,
+			} FOGMODE;
+
+			typedef enum _CMPFUNC: uint8_t
+			{
+				CMPFUNC_NEVER = 0,
+				CMPFUNC_LESS,
+				CMPFUNC_EQUAL,
+				CMPFUNC_LEQUAL,
+				CMPFUNC_GREATER,
+				CMPFUNC_NOTEQUAL,
+				CMPFUNC_GEQUAL,
+				CMPFUNC_ALWAYS,
+			} CMPFUNC;
+
+			typedef enum _PRIMTYPE
+			{
+				PRIMTYPE_POINTS = 0,
+				PRIMTYPE_LINES,
+				PRIMTYPE_LINE_STRIP,
+				PRIMTYPE_TRIANGLES,
+				PRIMTYPE_TRIANGLE_STRIP,
+				PRIMTYPE_TRIANGLE_FAN,
+			} PRIMTYPE;
+
+			typedef enum _TEXTARGET
+			{
+				TEXTARGET_NONE = 0,
+				TEXTARGET_2D,
+				TEXTARGET_3D,
+				TEXTARGET_CUBE,
+			} TEXTARGET;
+
+			typedef enum _FILTERMODE: uint8_t
+			{
+				FILTERMODE_NONE = 0,
+				FILTERMODE_NEAREST,
+				FILTERMODE_LINEAR,
+				FILTERMODE_ANISOTROPIC,
+			} FILTERMODE;
+
+			typedef enum _WRAPMODE: uint8_t
+			{
+				WRAPMODE_REPEAT = 0,
+				WRAPMODE_CLAMP,
+				WRAPMODE_MIRROR,
+				WRAPMODE_MIRROR_ONCE,
+			} WRAPMODE;
+
+			typedef enum _BLENDFACTOR: uint8_t
+			{
+				BLENDFACTOR_ZERO = 0,
+				BLENDFACTOR_ONE,
+				BLENDFACTOR_SRC_COLOR,
+				BLENDFACTOR_ONE_MINUS_SRC_COLOR,
+				BLENDFACTOR_SRC_ALPHA,
+				BLENDFACTOR_ONE_MINUS_SRC_ALPHA,
+				BLENDFACTOR_DEST_ALPHA,
+				BLENDFACTOR_ONE_MINUS_DEST_ALPHA,
+				BLENDFACTOR_DEST_COLOR,
+				BLENDFACTOR_ONE_MINUS_DEST_COLOR,
+				BLENDFACTOR_SRC_ALPHA_SAT,
+			} BLENDFACTOR;
+
+			typedef enum _BLENDOPERATION: uint8_t
+			{
+				BLENDOPERATION_ADD = 0,
+				BLENDOPERATION_SUBTRACT,
+				BLENDOPERATION_REVERSE_SUBTRACT,
+				BLENDOPERATION_MIN,
+				BLENDOPERATION_MAX,
+			} BLENDOPERATION;
+
+			typedef enum _STENCILOP: uint8_t
+			{
+				STENCILOP_KEEP = 0,
+				STENCILOP_ZERO,
+				STENCILOP_REPLACE,
+				STENCILOP_INCR_SAT,
+				STENCILOP_DECR_SAT,
+				STENCILOP_INVERT,
+				STENCILOP_INCR,
+				STENCILOP_DECR,
+			} STENCILOP;
+
+			typedef enum _CULLMODE: uint8_t
+			{
+				CULLMODE_CW = 0,
+				CULLMODE_CCW,
+			} CULLMODE;
+
+			typedef enum _LIGHTTYPE: uint8_t
+			{
+				LIGHTTYPE_POINT = 0,
+				LIGHTTYPE_DIRECTIONAL,
+				LIGHTTYPE_SPOT,
+			} LIGHTTYPE;
+
+			typedef enum _PIXELFORMAT
+			{
+				PIXELFORMAT_UNKNOWN = 0,
+				PIXELFORMAT_R8G8B8,
+				PIXELFORMAT_A8R8G8B8,
+				PIXELFORMAT_X8R8G8B8,
+				PIXELFORMAT_A4R4G4B4,
+				PIXELFORMAT_R5G6B5,
+				PIXELFORMAT_A8,
+				PIXELFORMAT_L8,
+				PIXELFORMAT_D16,
+				PIXELFORMAT_D32,
+				PIXELFORMAT_D24S8,
+				PIXELFORMAT_D24,
+				PIXELFORMAT_R32F,
+				PIXELFORMAT_G32R32F,
+				PIXELFORMAT_G16R16F,
+				PIXELFORMAT_A16B16G16R16F,
+			} PIXELFORMAT;
+
+			typedef enum _TEXTUREOP: uint8_t
+			{
+				TEXTUREOP_DISABLE = 0,
+				TEXTUREOP_SELECT_ARG1,
+				TEXTUREOP_SELECT_ARG2,
+				TEXTUREOP_MODULATE,
+				TEXTUREOP_ADD,
+				TEXTUREOP_ADD_SIGNED,
+				TEXTUREOP_SUBTRACT,
+			} TEXTUREOP;
+
+			typedef enum _TEXTUREARG: uint8_t
+			{
+				TEXTUREARG_DIFFUSE = 0,						// vertex color, alpha
+				TEXTUREARG_TEXTURE,							// texture color, alpha
+				TEXTUREARG_PREVIOUS,						// previous stage color, alpha
+				TEXTUREARG_DEFAULT_COLOR,					// for d3d, TFACTOR, for ogl, glColor
+			} TEXTUREARG;
+
+			typedef enum _CUBEMAP_FACE
+			{
+				CUBEMAP_FACE_POSITIVE_X = 0,
+				CUBEMAP_FACE_NEGATIVE_X,
+				CUBEMAP_FACE_POSITIVE_Y,
+				CUBEMAP_FACE_NEGATIVE_Y,
+				CUBEMAP_FACE_POSITIVE_Z,
+				CUBEMAP_FACE_NEGATIVE_Z,
+			} CUBEMAP_FACE;
+
+			typedef enum _RENDER_SETUP
+			{
+				RENDER_SETUP_1_RENDERTARGET = 0,
+				RENDER_SETUP_2_VIEWPORT_AND_CLIPRECT,
+				RENDER_SETUP_3_VIEWPROJ,
+				RENDER_SETUP_4_PIPELINE,
+				RENDER_SETUP_5_TRANSFORM_SHADESTATE_SHADERCONSTANT_TEXTURE_VBO,
+				RENDER_SETUP_6_FINISH_READY_DRAWPRIMITIVE,						// never reached
+			} RENDER_SETUP;
+
+			typedef enum _SHADERTYPE
+			{
+				SHADERTYPE_VERTEX = 0,
+				SHADERTYPE_PIXEL,
+			} SHADERTYPE;
+
+			typedef enum _SHADER_CONSTANT_SEMANTIC
+			{
+				SCS_UNDEFINED = 0,					// unrecognized
+				SCS_WORLD,							// world 4x4
+				SCS_VIEW,							// view 4x4
+				SCS_PROJECTION,						// projection 4x4
+				SCS_WORLDVIEW,						// world view 4x4
+				SCS_WORLDVIEWPROJECTION,			// world view projection 4x4
+				SCS_WORLDINVERSETRANSPOSE,			// world inverse transpose 3x3
+				SCS_WORLDVIEWINVERSETRANSPOSE,		// world view inverse transpose 3x3
+				SCS_WORLDINVERSE,					// world inverse, 4x4
+				SCS_VIEWINVERSE,					// view inverse, 4x4
+				SCS_PROJECTIONINVERSE,				// proj inverse, 4x4
+				SCS_WORLDVIEWPROJECTIONINVERSE,		// world view proj inverse, 4x4
+
+				SCS_WORLDCAMERAPOSITION,			// camera position in world space
+				SCS_LOCALCAMERAPOSITION,			// camera position in local space
+
+				SCS_TIMEINFO,						// [0] - time, [1] - last time, [2] - time delta, [3] - fps, no implementation
+
+			} SHADER_CONSTANT_SEMANTIC;
+
+			typedef enum _POOL: uint8_t
+			{
+				POOL_DEFAULT = 0,
+				POOL_MANAGED,
+				POOL_SYSTEMMEM,
+				POOL_SCRATCH,
+			} POOL;
+		};
+	};
+};
+

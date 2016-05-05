@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="D3D">
+      <UniqueIdentifier>{7071b8e9-40be-441c-be98-93c5e29f6be8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{8a680e52-b287-4101-8ef5-90f778729c7e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Video\d3dGfx.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\d3dIBO.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\d3dRenderbuffer.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\d3dShader.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\d3dShaderGen.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\d3dShaderGen_init.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\d3dTex2D.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\d3dTexCube.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\d3dVBO.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\AVIReader.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\AVIRenderer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\Gfx.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\IBO.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\Img2D.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\Jotter.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\Renderbuffer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\rsShade.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\rsView.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\Shader.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\ShaderGenConf.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\ShaderUniforms.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\ShaderUniforms2.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\Tex2D.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\Tex2DAVI.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\Tex2DGIF.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\TexBase.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\TexCube.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\TexCube_load.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\TexFont.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\TexFont_Internal.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Video\VBO.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Video\d3dGfx.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\d3dIBO.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\d3dRenderbuffer.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\d3dShader.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\d3dShaderGen.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\d3dTex2D.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\d3dTexCube.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\d3dVBO.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\AVIReader.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\AVIRenderer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\Gfx.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\GfxEnum.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\IBO.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\Img2D.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\Jotter.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\Renderbuffer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\rsShade.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\rsView.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\Shader.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\ShaderGen.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\ShaderGenConf.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\ShaderUniforms.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\ShaderUniforms2.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\Tex2D.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\Tex2DAVI.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\Tex2DGIF.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\TexBase.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\TexCube.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\TexFont.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\TexFont_Internal.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\VBO.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Video\Header.h" />
+    <ClInclude Include="..\..\Video\predecl.h" />
+  </ItemGroup>
+</Project>

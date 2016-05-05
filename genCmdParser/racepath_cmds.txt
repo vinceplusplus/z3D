@@ -1,0 +1,5 @@
+
+resize_curves "d"
+
+add_curve_point "dfffffff"
+

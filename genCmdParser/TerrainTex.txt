@@ -1,0 +1,9 @@
+
+// bitmap filename, r, g, b, elevation min, elevation max, elevation release,
+// slope min, slope max, slope release, weight scale, texture coordinate scale
+
+add_terrain_type "snnnnnnnnnnn"
+
+set_terrain_texture_size "d"
+
+set_terrain_splits "dd"

@@ -1,0 +1,7 @@
+resize_used_bones "d"
+
+set_used_bone "ds"
+
+resize_skin_verts "d"
+
+set_skin_vert "dddf"

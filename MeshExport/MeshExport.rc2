@@ -1,0 +1,38 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,140
+ PRODUCTVERSION 1,0,0,140
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "FileDescription", "MeshExpo Dynamic Link Library"
+            VALUE "FileVersion", "1, 0, 0, 140"
+            VALUE "InternalName", "MeshExpo"
+            VALUE "LegalCopyright", "Copyright (C) 2008"
+            VALUE "OriginalFilename", "MeshExpo.dll"
+            VALUE "ProductName", "MeshExpo Dynamic Link Library"
+            VALUE "ProductVersion", "1, 0, 0, 140"
+            VALUE "CompileDateTime", "2009.09.03  09:01:27"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+

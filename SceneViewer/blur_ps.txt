@@ -1,0 +1,19 @@
+
+#define FETCH_COUNT /*** FETCH_COUNT ***/
+
+float3 fetches[FETCH_COUNT];
+
+sampler2D sampler_0: register(s0);
+
+void main(
+	float4 in_color: COLOR,
+	float4 in_tc_0: TEXCOORD0,
+	out float4 out_color: COLOR,
+	uniform float4 END_PARAMS = 0
+	)
+{
+	float4 c = 0;
+	for(int i = 0; i < FETCH_COUNT; ++i)
+		c += tex2D(sampler_0, in_tc_0.xy + fetches[i].xy) * fetches[i].z;
+	out_color = c * in_color;
+}
